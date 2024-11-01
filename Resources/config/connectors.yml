@@ -49,6 +49,8 @@ services:
             - '@pim_connector.array_converter.dummy'
             - '@pim_connector.factory.flat_item_buffer'
             - '@pim_connector.writer.file.flat_item_buffer_flusher'
+            - '@pim_connector.job.file_backuper'
+
 
     # Quick export connector
     pim_custom_entity.reader.database.mass_edit_reference_data:
